@@ -5,32 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="hero">
-    <h1>Your Name</h1>
-    <p>Developer • Designer • Thinker</p>
-  </section>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="your-photo.jpg" alt="Your Photo" class="profile-pic">
+      <h1>Your Name</h1>
+      <p class="subtitle">PhD student in Machine Learning</p>
+      <ul class="contact">
+        <li><span>📍</span> Your City, Country</li>
+        <li><a href="mailto:your@email.com">📧 Email</a></li>
+        <li><a href="#">🐦 Twitter</a></li>
+        <li><a href="#">💼 LinkedIn</a></li>
+        <li><a href="#">🐱 GitHub</a></li>
+        <li><a href="#">📚 Google Scholar</a></li>
+      </ul>
+    </aside>
 
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>I enjoy building clean, timeless interfaces and turning ideas into simple, elegant code. I work with web technologies, design systems, and love minimal design.</p>
-  </section>
+    <main class="content">
+      <h2>Hello!</h2>
+      <p>
+        I'm a researcher in [Field]. Previously, I was a PhD student in machine learning at [University], advised by [Advisor Names]. Before that, I worked at [Institutions] on [short description].
+      </p>
+      <p>
+        Outside of research, I enjoy [hobbies or activities like reading, hiking, traveling].
+      </p>
+    </main>
+  </div>
+  <footer>
+    <p>© 2025 Your Name. Inspired by Yann Dubois. Powered by HTML/CSS/JS.</p>
+  </footer>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #f9f9f9;
+      color: #2e2e2e;
+    }
 
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1" target="_blank">→ Project One</a></li>
-      <li><a href="https://github.com/yourusername/project2" target="_blank">→ Project Two</a></li>
-    </ul>
-  </section>
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Get in touch: <a href="mailto:you@example.com">you@example.com</a></p>
-  </section>
+    .sidebar {
+      width: 280px;
+      background-color: #fff;
+      padding: 2rem;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  <script src="script.js"></script>
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin: 0.5rem 0;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: #777;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .contact {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .contact li {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact a {
+      color: #2e2e2e;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 4rem 3rem;
+    }
+
+    .content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #aaa;
+      padding: 1rem;
+      background-color: #f1f1f1;
+    }
+  </style>
 </body>
 </html>
